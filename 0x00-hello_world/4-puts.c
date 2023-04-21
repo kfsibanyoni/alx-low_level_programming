@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-/*return: ALways 0*/
+/**
+ * Main - entry point
+ *
+ * return: ALways 0
+ */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
