@@ -7,15 +7,15 @@
  */
 int main(void)
 {
-        /* local variable definition */
-        char revAlpha = 'z';
+	/* local variable definition */
+	char revAlpha = 'z';
 
 	/* while loop execution */
-	while(revAlpha >= 'a')
+	while (revAlpha >= 'a')
 	{
 		putchar(revAlpha);
 		revAlpha--;
 	}
 	putchar('\n');
-	return 0;
+	return (0);
 }
