@@ -2,7 +2,7 @@
 int main() {
     int i;
     
-    for (i = 0; c < 10; i++)
+    for (i = 0; i < 10; i++)
         putchar("%d, ", i);
 	 return (0);
 }
