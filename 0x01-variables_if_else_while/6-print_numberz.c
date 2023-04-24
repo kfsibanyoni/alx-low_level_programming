@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * main - main code block
  *
@@ -7,11 +8,12 @@
 
 int main(void)
 {
-        int num;
+        int x;
 
-        for (num = 0; num < 10; num++)
-		putchar((num % 10) + '0');
-	
+        for (x = 0; x < 10; x++)
+	{
+		putchar(x + '0');
+	}
 	putchar('\n');
 	return (0);
 }
