@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main()
+int main(void)
 {
 	/* local variable definition */
 	char upLetters = 'A';
@@ -9,10 +9,12 @@ int main()
 	/* while loop execution */
 	while((lowLetters <= 'z') && (upLetters <= 'Z'))
 	{
-		putchar(upLetters);
+		char up = putchar(upLetters);
 		upLetters++;
-		putchar(lowLetters);
-                lowLetters++;
+		
+		char low = putchar(lowLetters);
+		lowLetters++;
 	}
+	putchar(low + up);
 	return 0;
 }
