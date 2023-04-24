@@ -11,8 +11,6 @@ int main()
 	{
 		putchar(upLetters);
 		A++;
-		putchar(lowLetters);
-		a++;
 	}
 	return 0;
 }
