@@ -5,12 +5,11 @@
  * Return: 0 always
  *
  */
-
 int main(void)
 {
-        int x;
+	int x;
 
-        for (x = 0; x < 10; x++)
+	for (x = 0; x < 10; x++)
 	{
 		putchar(x + '0');
 	}
