@@ -1,11 +1,16 @@
 #include <stdio.h>
 
-int main(){
-  char letter;
 
-  while (letter <= 'z')
-    {
-      printf({a..z}\n);
-    }
-  return 0;
+int main()
+{
+	/* local variable definition */
+	char letters = 'a';
+	
+	/* while loop execution */
+	while(letters <= 'z')
+	{
+		putchar(letters);
+		letters++;
+	}	
+   return 0;
 }
