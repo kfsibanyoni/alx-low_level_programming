@@ -13,8 +13,9 @@ int main(void)
 	/* while loop execution */
 	while(letters <= 'z')
 	{
-		putchar(letters '\n');
+		putchar(letters);
 		letters++;
 	}
+	putchar('\n');
 	return 0;
 }
