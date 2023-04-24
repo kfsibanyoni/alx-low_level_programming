@@ -5,16 +5,18 @@ int main(void)
 	/* local variable definition */
 	char upLetters = 'A';
 	char lowLetters = 'a';
-	
+	char upper;
+	char lower;
+
 	/* while loop execution */
 	while((lowLetters <= 'z') && (upLetters <= 'Z'))
 	{
-		char up = putchar(upLetters);
+		upper = putchar(upLetters);
 		upLetters++;
 		
-		char low = putchar(lowLetters);
+		lower = putchar(lowLetters);
 		lowLetters++;
 	}
-	putchar(low + up);
-	return 0;
+	putchar(lower + upper);
+	return (0);
 }
