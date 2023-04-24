@@ -3,7 +3,7 @@
 /**
  * main - main code block
  *
- * return: 0 always
+ * Return: 0 always
  *
  */
 
@@ -13,7 +13,7 @@ int main(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		putchar(i);
+		putchar(i + '0');
 	}
 	for (i = 'a'; i <= 'f'; i++)
 	{
