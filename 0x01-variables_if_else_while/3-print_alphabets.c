@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void)
+int main()
 {
 	/* local variable definition */
 	char upLetters = 'A';
