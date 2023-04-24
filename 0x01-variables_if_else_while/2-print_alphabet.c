@@ -5,7 +5,7 @@
  * Return: 0 always
  *
  */
-int main()
+int main(void)
 {
 	/* local variable definition */
 	char letters = 'a';
@@ -13,7 +13,7 @@ int main()
 	/* while loop execution */
 	while(letters <= 'z')
 	{
-		putchar(letters + '\n');
+		putchar(letters '\n');
 		letters++;
 	}
 	return 0;
