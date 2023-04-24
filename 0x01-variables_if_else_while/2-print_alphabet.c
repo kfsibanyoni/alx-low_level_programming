@@ -13,7 +13,7 @@ int main()
 	/* while loop execution */
 	while(letters <= 'z')
 	{
-		putchar(letters\n);
+		putchar(letters + '\n');
 		letters++;
 	}
 	return 0;

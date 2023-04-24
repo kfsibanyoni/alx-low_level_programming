@@ -10,7 +10,9 @@ int main()
 	while((lowLetters <= 'z') && (upLetters <= 'Z'))
 	{
 		putchar(upLetters);
-		A++;
+		upLetters++;
+		putchar(lowLetters);
+                lowLetters++;
 	}
 	return 0;
 }
