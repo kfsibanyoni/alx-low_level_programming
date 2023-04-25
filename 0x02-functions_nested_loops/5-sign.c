@@ -6,7 +6,7 @@
  *
  * @n: input value
  *
- * return: positive, is zero or is negative
+ * Return: +, 0, -
  */
 int print_sign(int n)
 {
