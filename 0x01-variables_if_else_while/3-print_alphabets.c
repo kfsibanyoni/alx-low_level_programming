@@ -1,5 +1,10 @@
 #include <stdio.h>
-
+/**
+ * main - main code block
+ *
+ * Return: 0 always
+ *
+ */
 int main(void)
 {
 	/* local variable definition */
