@@ -2,7 +2,7 @@
 
 /**
  * _islower - return 1 if character is lower case, else 0
- * int c: formal parameter
+ * c: formal parameter
  * Return: 1(success); 0(false)
  *
  */
