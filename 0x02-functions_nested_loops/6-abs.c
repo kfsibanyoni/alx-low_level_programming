@@ -6,15 +6,15 @@
  * return: abs value
  *
  */
-int _abs(int)
+int _abs(int x)
 {
-	if (int >= 0)
+	if (x >= 0)
 	{
-		return (int);
+		return (x);
 	}
-	else if (int < 0)
+	else if (x < 0)
 	{
-		return (int * -1);
+		return (x * -1);
 	}
 	_putchar('\n');
 }
