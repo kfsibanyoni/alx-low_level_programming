@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * int _abs - find abs value of a n integer
+ * _abs - find abs value of a n integer
  *
  * @x: input var
  *
- * return: abs value
+ * return: _abs value
  *
  */
 int _abs(int x)
