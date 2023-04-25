@@ -2,10 +2,15 @@
 #include "main.h"
 
 /**
- * print_sign - print (+), (0), (-) for a number 
+ * print_sign - print (+), (0), (-) for a number
+ *
  * @n: input value
  * 
- * return: 1 is positive, 0 is zero, -1 is negative
+ * return: 1 is positive
+ *
+ * 0 is zero
+ *
+ * -1 is negative
  */
 int print_sign(int n)
 {
