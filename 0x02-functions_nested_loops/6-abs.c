@@ -3,6 +3,8 @@
 /**
  * int _abs - find abs value of a n integer
  *
+ * @x: input var
+ *
  * return: abs value
  *
  */
@@ -12,5 +14,5 @@ int _abs(int x)
 	{
 		return (x);
 	}
-	return (-1*n);
+	return (-x);
 }
