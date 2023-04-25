@@ -2,13 +2,12 @@
 #include <stdio.h>
 
 /**
- *
- * add - print sum of two ints
+ * add - add two integers
  *
  * @x: no. 1
  * @y: no. 2
  *
- * Return: sum of two ints
+ * Return: result of adding two integers
  *
  */
 int add(int x, int y)
