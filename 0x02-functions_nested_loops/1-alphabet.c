@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include "main.h"
+
 /**
  * main - entry point: print char alphabet
  *
- * Return: 0 always
+ * Return: 0 always(success)
  *
  */
 int main(void)
