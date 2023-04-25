@@ -8,7 +8,7 @@
  * @x: no. 1
  * @y: no. 2
  *
- * return: x + y
+ * Return: sum of two ints
  *
  */
 int add(int x, int y)
