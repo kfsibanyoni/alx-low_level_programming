@@ -2,19 +2,17 @@
 #include "main.h"
 
 /**
- * main - entry point: print char alphabet
+ * print_alphabet - print alphabte in lower case
  *
  * Return: 0 always(success)
  *
  */
-int main(void)
+void print_alphabet(void)
 {
-	/* local variable definition */
 	char  alphabet = 'a';
-
 	while (alphabet <= 'z')
 	{
-		print_alphabet(alphabet);
+		_putchar(alphabet);
 		alphabet++;
 	}
 	_putchar('\n');
