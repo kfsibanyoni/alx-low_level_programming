@@ -9,13 +9,13 @@ int main(void)
 {
 	/* local variable definition */
 	char letters = 'a';
-	
+
 	/* while loop execution */
-	while(letters <= 'z')
+	while (letters <= 'z')
 	{
 		putchar(letters);
 		letters++;
 	}
 	putchar('\n');
-	return 0;
+	return (0);
 }
