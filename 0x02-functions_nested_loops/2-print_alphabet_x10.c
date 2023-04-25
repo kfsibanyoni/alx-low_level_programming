@@ -9,7 +9,7 @@
  */
 void print_alphabet_x10(void)
 {
-	int i;
+	int i = 0;
 
 	while (i < 10)
 	{
@@ -20,6 +20,7 @@ void print_alphabet_x10(void)
 			_putchar(alphabet);
 			alphabet++;
 		}
+		i++;
 		_putchar('\n');
 	}
 	_putchar('\n');
