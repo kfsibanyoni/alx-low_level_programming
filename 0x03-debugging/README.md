@@ -1,12 +1,9 @@
 # Project 4: Debugging #
-***
+
 Investigating what it is to debug a code, which includes learning to test for bugs, spotting anomalies or discrepencies, and identifiying the best solution.
----
----
 
 ## Tasks ##
----
----
+
 0. Multiple mains
 1. Like, comment, subscribe
 2. 0 > 972?
