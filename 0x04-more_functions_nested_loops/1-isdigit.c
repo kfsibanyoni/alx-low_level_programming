@@ -3,7 +3,7 @@
 /**
  * _isdigit - checks for a digit (0 through 9)
  * @c: formal parameter
- * return: 1(success), 0(fail)
+ * Return: 1(success), 0(fail)
  */
 
 int _isdigit(int c)
