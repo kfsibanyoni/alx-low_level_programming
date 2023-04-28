@@ -3,7 +3,7 @@
 /**
  * print_numbers - prints the numbers, from 0 to 9, followed by a new line
  *
- * @i: start var
+ * Return: 0 always
  */
 
 void print_numbers(void)
@@ -17,4 +17,5 @@ void print_numbers(void)
 	}
 
 	_putchar('\n');
+	return (0);
 }
