@@ -2,8 +2,7 @@
 #include "main.h"
 
 /**
- * main - prints the numbers from 1 to 100 where multiplies of 3 are Fizz and 5 are Buzz, both are FizzBuzz
- *
+ * main - prints the numbers from 1 to 100
  * Return: void
  */
 
