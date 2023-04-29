@@ -1,11 +1,17 @@
 #include <stdio.h>
 #include "main.h"
 
+/**
+ * main - prints the numbers from 1 to 100 where multiplies of 3 are Fizz and 5 are Buzz, both are FizzBuzz
+ *
+ * Return: void
+ */
+
 int main(void)
 {
 	int x;
 
-	for (x = 1; x < 100; x++)
+	for (x = 1; x <= 100; x++)
 	{
 		if (x % 3 == 0)
 		{
@@ -19,14 +25,16 @@ int main(void)
 		{
 			printf("%s", "FizzBuzz");
 		}
-		else 
+		else if (x % 3 != 0 && x % 5 != 0)
 		{
-			printf("%d", i);
+			printf("%d", x);
 		}
-		if (i != 100)
+		if (x != 100)
 		{
 			printf(" ");
 		}
 	}
-		printf("\n");
+
+	printf("\n");
+	return (0);
 }
