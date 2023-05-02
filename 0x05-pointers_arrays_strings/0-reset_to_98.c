@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - takes pointer to int as param and updates val. to 98.
- *
+ * @n: variable pointer
  * Return: void
  */
 
