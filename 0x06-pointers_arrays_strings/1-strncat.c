@@ -7,7 +7,7 @@
  * @src: pointer
  * @n: bytes
  *
- * Return; string concat
+ * Return: string concat
  */
 
 char *_strncat(char *dest, char *src, int n)
