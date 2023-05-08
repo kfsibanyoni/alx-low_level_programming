@@ -10,19 +10,14 @@
 
 void print_chessboard(char (*a)[8])
 {
-	unsigned int row, col;
+	int row, col;
 
-	col = 0;
-	while (row < 64)
+	for (row = 0; row < 8; row++)
 	{
-		if (row % 8 == 0 && row != 0)
+		for (col = 0; col < 8; col++)
 		{
-			row = col;
-			_putchar('\n');
+			_putchar(a[row][col]);
 		}
-
-		row++;
-		_putchar(a[row / 8][row - col]);
 	}
 
 	_putchar('\n');
