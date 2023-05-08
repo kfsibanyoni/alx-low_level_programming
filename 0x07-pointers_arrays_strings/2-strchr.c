@@ -14,18 +14,16 @@ char *_strchr(char *s, char c)
 	int find;
 
 	find = 0;
-	if (find)
+	while (s[find] != '\0')
 	{
-		return (NULL);
-	}
-	else
-		while (s[find] != '\0')
+		if (s[find] == c)
 		{
-			if (s[find] == c)
-			{
-				return (s);
-			}
-			++s;
+			return (s);
 		}
+		else if (find)
+			return (NULL);
+
+		++s;
+	}
 	return (0);
 }
