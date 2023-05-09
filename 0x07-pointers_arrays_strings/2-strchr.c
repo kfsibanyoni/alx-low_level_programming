@@ -13,9 +13,9 @@ char *_strchr(char *s, char c)
 {
 	for (; *s; s++)
 	{
-		if (*s != c)
+		if (*s++ != c)
 		{
-			++s;
+			retrun (s - 1);
 		}
 		else
 			return (s);
