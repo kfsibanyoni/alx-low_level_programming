@@ -15,10 +15,10 @@ char *_strchr(char *s, char c)
 	{
 		if (*s != c)
 		{
-			++s;
+			return (s + 1);
 		}
 		else
-			return (s - 1);
+			return (s);
 	}
 	if (c == '\0')
 		return (s);
