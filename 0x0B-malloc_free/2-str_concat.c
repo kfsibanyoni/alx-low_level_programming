@@ -32,6 +32,8 @@ char *str_concat(char *s1, char *s2)
 		for (i = 0; i < size1; i++)
 			strc[i] = s1[i];
 	}
+	else
+		s1 = "";
 
 	j = 0;
 	if (s2)
