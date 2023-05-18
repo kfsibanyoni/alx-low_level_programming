@@ -43,7 +43,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	n = nmemb * size;
 	arr = malloc(n);
 
-	if (nmemb == 0 || size == 0 || arr == NULL)
+	if (nmemb == 0 || size == 0)
+		return (NULL);
+
+	if (arr == NULL)
 		return (NULL);
 
 	_memset(arr, 0, n);
