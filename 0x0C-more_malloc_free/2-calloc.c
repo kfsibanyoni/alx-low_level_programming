@@ -41,11 +41,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	void *arr;
 
 	n = nmemb * size;
-	arr = malloc(n);
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
+	arr = malloc(n);
 	if (arr == NULL)
 		return (NULL);
 
