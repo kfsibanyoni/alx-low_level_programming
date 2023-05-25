@@ -6,7 +6,7 @@
  * get_op_func - selects correct funct to perform op asked
  *
  * @s: operator passed as argument to the program
- * 
+ *
  * Return: pointer to the funct that relates to the op given as parameter
  */
 
