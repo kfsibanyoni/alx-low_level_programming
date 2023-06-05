@@ -15,9 +15,14 @@ list_t *add_node(list_t **head, const char *str)
 	/* allocate memory for new node */
 	list_t *new_lead = malloc(sizeof(list_t));
 
+	if (new_lead == NULL)
+		return (NULL);
+
 	/* put in new data */
 	new_lead->str = strdup(str);
 	new_lead->len = _strlen(str);
+
+	/* make next of new_lead the head*/
 	new_lead->next = (*head);
 	(*head) = new_lead;
 
