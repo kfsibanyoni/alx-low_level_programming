@@ -20,6 +20,8 @@ list_t *add_node_end(list_t **head, const char *str)
 	newLast->len = _strlen(str);
 	newLast->next = NULL;
 
+	if (newLast == NULL)
+		return (NULL);
 	/* if list empty make new node the head */
 	if (*head == NULL)
 	{
