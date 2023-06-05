@@ -4,8 +4,8 @@
 /**
  * add_node_end - adds a new node at the end of a list_t list.
  *
- * @head - start node
- * @str - string to duplicate
+ * @head: start node
+ * @str: string to duplicate
  *
  * Return: the address of the new element
  * NULL if it failed
@@ -29,7 +29,6 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	while (last->next != NULL)
 		last = last->next;
-		
 
 	last->next = newLast;
 	return (newLast);
