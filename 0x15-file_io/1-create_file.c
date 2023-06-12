@@ -27,7 +27,9 @@ int create_file(const char *filename, char *text_content)
 
 	n = 0;
 	while (text_content[n])
+	{
 		n++;
+	}
 
 	f = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600)
 	w = write(f, text_content, n);
