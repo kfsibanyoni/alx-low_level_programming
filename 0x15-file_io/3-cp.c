@@ -31,6 +31,8 @@ static void w_cpy(char *file, int fd, char *buffer, int n)
  * @file: ..
  * @buffer: ..
  * @fd: ..
+ *
+ * Return: ...
  */
 static ssize_t rd_file(char *file, char **buffer, int fd)
 {
