@@ -12,19 +12,23 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int x;
-	int i;
+	unsigned int val = 0, i = 0;
 
-	if (b == NULL)
+	if (!b || !(*b))
 		return (0);
 
-	for (i = 0; b[i]; i++)
+	while (b[i])
 	{
-		if (b[i] < '0' || b[i] > '1')
+		if (b[i] > 49)
 			return (0);
-
-		x = 2 * x + (b[i] - '0');
+		else if (b[i] == 49)
+		{
+			val <<= 1;
+			val += 1;
+		}
+		else
+			val <<= 1;
+		i++;
 	}
-
-	return (x);
+	return (val);
 }
