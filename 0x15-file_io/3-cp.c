@@ -1,6 +1,12 @@
 #include "main.h"
 
 /**
+ * w_cpy - write buffer to a file
+ *
+ * @file: ...
+ * @fd: ...
+ * @buffer: ...
+ * @n: ...
  *
  */
 static void w_cpy(char *file, int fd, char *buffer, int n)
@@ -38,13 +44,13 @@ static ssize_t rd_file(char *file, char **buffer, int fd)
 
 	if (*buffer == NULL)
 		*buffer = malloc(sizeof(char) * 1024);
-	
+
 	if (*buffer == NULL)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file);
 		exit(98);
 	}
-	
+
 	n = read(fd, *buffer, 1024);
 	if (n < 0)
 	{
@@ -58,18 +64,16 @@ static ssize_t rd_file(char *file, char **buffer, int fd)
 /**
  * main - copies the content of a file to another file
  *
- * @ac: ...
- * @av: ...
+ * @argc: ...
+ * @argv: ...
  *
  * Return: ...
  */
 int main(int argc, char **argv)
 {
-	char *buffer, *from, *to;
-	int f0, f1, n, error;
+	char *buffer = NULL, *from, *to;
+	int f0, f1, error, n = 1;
 
-	buffer = NULL;
-	n = 1;
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
@@ -80,7 +84,6 @@ int main(int argc, char **argv)
 	f0 = open(from, O_RDONLY);
 	to = argv[2];
 	f1 = open(to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
-
 	while (n > 0)
 	{
 		n = rd_file(from, &buffer, f0);
