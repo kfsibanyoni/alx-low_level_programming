@@ -14,6 +14,6 @@ int clear_bit(unsigned long int *n, unsigned int index);
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
 
 /***** HELPER FUNCTIONS *****/
-int _putchar(char *s);
+int _putchar(char s);
 
 #endif
