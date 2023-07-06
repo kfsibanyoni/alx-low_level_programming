@@ -6,7 +6,7 @@
  * Return: void
  */
 void print_binary(unsigned long int n)
-{	
+{
 	if (n > 1)
 		/* n > 0001 shift 1 right */
 		print_binary(n >> 1);
