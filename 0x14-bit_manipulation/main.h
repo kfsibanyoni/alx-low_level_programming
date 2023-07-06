@@ -1,9 +1,11 @@
-#ifndef _MAIN_H
-#define _MAIN_H
+#ifndef MAIN_H
+#define MAIN_H
 
+/***** LIBRARIES *****/
 #include <stdio.h>
-#include <stdlib.h>
 
+
+/***** TASK PROTOTYPES *****/
 unsigned int binary_to_uint(const char *b);
 void print_binary(unsigned long int n);
 int get_bit(unsigned long int n, unsigned int index);
@@ -11,10 +13,7 @@ int set_bit(unsigned long int *n, unsigned int index);
 int clear_bit(unsigned long int *n, unsigned int index);
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
 
-/*** ADVANCED TASKS ****/
-int get_endianness(void);
-
-/*** HELPER ***/
-int _putchar(char c);
+/***** HELPER FUNCTIONS *****/
+int _putchar(char *s);
 
 #endif
