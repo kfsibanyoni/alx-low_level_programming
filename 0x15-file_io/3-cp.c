@@ -18,7 +18,7 @@ int main(int ac, char **av)
 	}
 
 	f1 = open(av[1], O_RDONLY);
-	if (f1 < 0)
+	if (f1 == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
 		exit(98);
@@ -26,9 +26,9 @@ int main(int ac, char **av)
 
 	f2 = open(av[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	rd = read(f1, buffer, 1024);
-	while (rd > 0)
+	while (rd == -1)
 	{
-		if (write(f2, buffer, rd) != rd || f2 < 0)
+		if (write(f2, buffer, rd) != rd || f2 == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
 			exit(99);
